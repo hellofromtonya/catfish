@@ -11,7 +11,7 @@
  * Plugin Name:     Fulcrum Catfish
  * Plugin URI:      http://hellofromtonya.com
  * Description:     Catfish Plugin - Adds a sticky footer toolbar to your website with social share, comments link, and scroll to top.
- * Version:         1.0.0
+ * Version:         1.0.1
  * Author:          hellofromTonya
  * Author URI:      http://hellofromtonya.com
  * Text Domain:     catfish

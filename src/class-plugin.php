@@ -3,7 +3,7 @@
  * Catfish - adds a sticky footer toolbar
  *
  * @package     Catfish
- * @since       1.0.0
+ * @since       1.0.1
  * @author      hellofromTonya
  * @link        http://hellofromtonya.com
  * @license     GNU General Public License 2.0+
@@ -20,7 +20,7 @@ class Plugin extends Addon {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 
 	/**
 	 * The plugin's minimum WordPress requirement
@@ -70,9 +70,15 @@ class Plugin extends Addon {
 	 */
 	protected function init_addon() {
 		add_action( 'genesis_before_content', array( $this, 'init_plugin' ) );
-
 	}
 
+	/**
+	 * Initialize the plugin.  The catfish is only applied to a single .
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
 	public function init_plugin() {
 		if ( ! is_single() ) {
 			return;
@@ -83,6 +89,13 @@ class Plugin extends Addon {
 		add_action( 'genesis_after_footer', array( $this, 'render' ) );
 	}
 
+	/**
+	 * Initialize the needed properties to prepare for rendering the view file.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
 	protected function init_properties() {
 		$this->title           = get_the_title();
 		$this->title_attribute = str_replace(' ', '+', $this->title );
@@ -90,6 +103,13 @@ class Plugin extends Addon {
 		$this->url_attribute   = urlencode( $this->url );
 	}
 
+	/**
+	 * Render the catfish out to the browser by loading the View file.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
 	public function render() {
 		include( $this->config->view );
 	}
