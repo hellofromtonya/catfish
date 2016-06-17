@@ -14,7 +14,7 @@ This is a WordPress plugin and [Fulcrum](https://github.com/hellofromtonya/fulcr
 
 ### Styling
 
-Oh silly, styling never goes in a plugin. Nope, you want to style this baby up in your theme.  However, a suggested starting point is provided in the `assets/sass` folder.  Simply copy the `catfish` folder into your theme and then import the index file into your `style.scss` file like so: `@import "catfish/index";`.
+Oh silly, styling never goes in a plugin. Nope, you want to style this baby up in your theme.  However, a suggested starting point is provided in the `assets/sass` folder.  Simply copy the `catfish` folder into your theme and then import the index file into your `style.scss` file like so: `@import "catfish/index";`.  You can see an example of how I did it in my [Hello](https://github.com/hellofromtonya/hello-child-theme/blob/master/assets/sass/components/index.scss#L12) theme.
 
 ## Dependencies
 

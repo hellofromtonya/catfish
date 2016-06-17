@@ -1,5 +1,5 @@
 {
-    "name" 			: "hellofromtonya/catfish",
+    "name"          : "hellofromtonya/catfish",
     "description" 	: "Catfish Plugin - Adds a sticky footer toolbar to your website with social share, comments link, and scroll to top.",
     "type"          : "project",
     "keywords" 		: ["wordpress", "wp", "plugin"],
