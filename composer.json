@@ -1,9 +1,9 @@
 {
-    "name" 			: "knowthecode/fulcrum-site",
-    "description" 	: "Site Specific Plugin - This plugin is an addon for Fulcrum",
+    "name" 			: "hellofromtonya/catfish",
+    "description" 	: "Catfish Plugin - Adds a sticky footer toolbar to your website with social share, comments link, and scroll to top.",
     "type"          : "project",
     "keywords" 		: ["wordpress", "wp", "plugin"],
-    "homepage" 		: "https://knowthecode.io",
+    "homepage" 		: "http://hellofromtonya.com",
     "license" 		: "GPL-2.0+",
     "authors": [
         {
